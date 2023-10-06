@@ -1,0 +1,32 @@
+{
+  "name": "embeddings-asiad-2022",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "packageManager": "pnpm@8.7.1",
+  "engines": {
+    "node": "~18.18.0",
+    "pnpm": "=8.7.1"
+  },
+  "scripts": {
+    "start": "tsx src/cli.ts"
+  },
+  "keywords": [],
+  "author": "Asuka109 <asuka109@foxmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "ai": "^2.2.14",
+    "dotenv": "^16.3.1",
+    "got": "^11.8.6",
+    "happy-dom": "^12.7.0",
+    "openai": "^4.11.1",
+    "vectra": "^0.4.4",
+    "find-up": "~4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "~18.0.0",
+    "@modern-js/tsconfig": "^2.35.1",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  }
+}
