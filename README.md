@@ -29,7 +29,7 @@ $ pnpm start add "我喜欢吃苹果"
 ```
 
 ```
-> embeddings-asiad-2022@1.0.0 start /Users/asuka109/repositories/embeddings-asiad-2022
+> embeddings-asiad-2022@1.0.0 start /WORKSPACE/embeddings-asiad-2022
 > tsx src/cli.ts "add" "我喜欢吃苹果"
 
 Add: 我喜欢吃苹果
@@ -38,15 +38,18 @@ Add: 我喜欢吃苹果
 ### Query and rank records
 
 ```bash
-$ pnpm start query "I bought some stocks of Apple Inc."
+$ pnpm start add "I bought some stocks of Apple Inc."
+$ pnpm start add "I like to eat apples."
+$ pnpm start add "我喜欢吃苹果"
+$ pnpm start query "I tend to favor value investing and usually invest in some tech giants."
 ```
 
 ```
 > embeddings-asiad-2022@1.0.0 start /Users/asuka109/repositories/embeddings-asiad-2022
-> tsx src/cli.ts "query" "I bought some stocks of Apple Inc."
+> tsx src/cli.ts "query" "I tend to favor value investing and usually invest in some tech giants."
 
-Query: I bought some stocks of Apple Inc.
-[1.00000] I bought some stocks of Apple Inc.
-[0.82988] I like to eat apples.
-[0.77728] 我喜欢吃苹果
+Query: I tend to favor value investing and usually invest in some tech giants.
+[0.84487] I bought some stocks of Apple Inc.
+[0.78892] I like to eat apples.
+[0.72585] 我喜欢吃苹果
 ```
